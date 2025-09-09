@@ -31,7 +31,7 @@ redirect_from:
     <div class="col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/about/honors-min.jpg' | relative_url }}"
+             src="{{ '/assets/about/honors-min.jpg' | relative_url }}"
              alt="Honors recognition">
       </div>
     </div>
@@ -39,7 +39,7 @@ redirect_from:
     <div class="col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/about/southwest2-min.jpg' | relative_url }}"
+             src="{{ '/assets/about/southwest2-min.jpg' | relative_url }}"
              alt="Southwest Airlines">
       </div>
     </div>
