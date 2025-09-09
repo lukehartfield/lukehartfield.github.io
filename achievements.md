@@ -19,7 +19,7 @@ redirect_from:
         <div class="card bg-secondary-subtle h-100">
           <div class="card-body d-flex align-items-center justify-content-center">
             <img class="img-fluid rounded"
-                 src="{{ '/assets/img/achievements/regionals-min.jpg' | relative_url }}"
+                 src="{{ '/assets/achievementimages/regionals-min.jpg' | relative_url }}"
                  alt="Level 10 Gymnast"
                  style="object-fit:cover; max-width:100%; max-height:100%;">
           </div>
@@ -36,7 +36,7 @@ redirect_from:
         <div class="card bg-secondary-subtle h-100">
           <div class="card-body d-flex align-items-center justify-content-center">
             <img class="img-fluid rounded"
-                 src="{{ '/assets/img/achievements/eaglescout-min.jpg' | relative_url }}"
+                 src="{{ '/assets/achievementimages/eaglescout-min.jpg' | relative_url }}"
                  alt="Eagle Scout"
                  style="object-fit:cover; max-width:100%; max-height:100%;">
           </div>
