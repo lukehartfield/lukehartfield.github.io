@@ -3,3 +3,4 @@ plugins:
   - jekyll-redirect-from
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'node_modules/']
 baseurl: ""   # keep empty for a user site
+permalink: pretty
