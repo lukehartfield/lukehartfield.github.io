@@ -12,7 +12,7 @@ redirect_from:
     <div class="col-12 col-sm-6 col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/travel/cliffjumping-min.jpg' | relative_url }}"
+             src="{{ '/assets/travelimages/cliffjumping-min.jpg' | relative_url }}"
              alt="Dubrovnik cliff jumping" loading="lazy">
         <p class="location-text">Dubrovnik, Croatia</p>
       </div>
@@ -22,7 +22,7 @@ redirect_from:
     <div class="col-12 col-sm-6 col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/travel/nepalriver-min.jpeg' | relative_url }}"
+             src="{{ '/assets/travelimages/nepalriver-min.jpeg' | relative_url }}"
              alt="Trishuli River" loading="lazy">
         <p class="location-text">Trishuli, Nepal</p>
       </div>
@@ -32,7 +32,7 @@ redirect_from:
     <div class="col-12 col-sm-6 col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/travel/louvre-min.jpg' | relative_url }}"
+             src="{{ '/assets/travelimages/louvre-min.jpg' | relative_url }}"
              alt="Louvre Museum" loading="lazy">
         <p class="location-text">Paris, France</p>
       </div>
@@ -42,7 +42,7 @@ redirect_from:
     <div class="col-12 col-sm-6 col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/travel/tahiti-min.jpg' | relative_url }}"
+             src="{{ '/assets/travelimages/tahiti-min.jpg' | relative_url }}"
              alt="Tahiti coastline" loading="lazy">
         <p class="location-text">Tahiti, French Polynesia</p>
       </div>
@@ -52,7 +52,7 @@ redirect_from:
     <div class="col-12 col-sm-6 col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/travel/taj-min.jpg' | relative_url }}"
+             src="{{ '/assets/travelimages/taj-min.jpg' | relative_url }}"
              alt="Taj Mahal" loading="lazy">
         <p class="location-text">Agra, India</p>
       </div>
@@ -62,7 +62,7 @@ redirect_from:
     <div class="col-12 col-sm-6 col-md-4 mb-4">
       <div class="photo-box">
         <img class="img-fluid rounded"
-             src="{{ '/assets/img/travel/yucatan-min.jpg' | relative_url }}"
+             src="{{ '/assets/travelimages/yucatan-min.jpg' | relative_url }}"
              alt="Yucatán cenote" loading="lazy">
         <p class="location-text">Yucatán, Mexico</p>
       </div>
