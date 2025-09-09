@@ -16,7 +16,7 @@ redirect_from:
       <div class="photo-box">
         <img
           class="img-fluid rounded"
-          src="{{ '/assets/newimages/new-headshot.jpg' | relative_url }}"
+          src="{{ '/assets/newimages/new-headshot-min.jpg' | relative_url }}"
           alt="Luke Hartfield headshot"
         >
       </div>
