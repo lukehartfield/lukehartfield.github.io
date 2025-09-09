@@ -1,10 +1,38 @@
-<header>
-  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-  <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
-    <a href="{{ '/resume/' | relative_url }}">Resume</a>
-    <a href="{{ '/achievements/' | relative_url }}">Achievements</a>
-    <a href="{{ '/travel/' | relative_url }}">Travel</a>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <span class="fas fa-home"></span>&nbsp;Home
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#nav-content" aria-controls="nav-content"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav-content">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/about/' | relative_url }}">
+            <span class="fas fa-user"></span>&nbsp;About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/resume/' | relative_url }}">
+            <span class="fas fa-file-pdf"></span>&nbsp;Resume
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/achievements/' | relative_url }}">
+            <span class="fas fa-medal"></span>&nbsp;Achievements
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/travel/' | relative_url }}">
+            <span class="fas fa-camera"></span>&nbsp;Travel
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
