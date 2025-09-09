@@ -10,7 +10,7 @@ redirect_from:
   <div class="col-md-6">
     <div class="photo-box">
       <img class="img-fluid rounded"
-           src="{{ '/assets/img/resume/resumephoto.jpg' | relative_url }}"
+           src="{{ '/assets/images/resumephoto.jpg' | relative_url }}"
            alt="Luke Hartfield">
     </div>
   </div>
