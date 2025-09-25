@@ -16,10 +16,10 @@ redirect_from:
 <div class="container">
   <div class="d-flex justify-content-center flex-wrap image-container">
     <img class="img-fluid rounded d-block m-2"
-         src="{{ '/assets/achievementimages/eagleproject-min.jpg' | relative_url }}"
+         src="{{ '/assets/achievementimage/eagleproject-min.jpg' | relative_url }}"
          alt="Eagle Project" loading="lazy" />
     <img class="img-fluid rounded d-block m-2"
-         src="{{ '/assets/achievementimages/seabase-min.jpg' | relative_url }}"
+         src="{{ '/assets/achievementimage/seabase-min.jpg' | relative_url }}"
          alt="Seabase" loading="lazy" />
   </div>
 </div>
