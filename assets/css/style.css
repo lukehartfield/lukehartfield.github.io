@@ -16,3 +16,13 @@ header h1 { margin: 0 }
 
 /* Divider used in your Razor: <hr class="hr-danger" /> */
 .hr-danger { border: 0; height: 2px; background: var(--bs-danger, #dc3545); opacity: .6; margin: 2rem 0 }
+
+/* Make achievement images match About page sizing */
+.image-container {
+  gap: 12px;               /* space between images */
+}
+.image-container img {
+  max-width: 320px;        /* tweak to taste: 260–360px */
+  width: 100%;
+  height: auto;
+}
