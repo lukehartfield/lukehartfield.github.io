@@ -56,12 +56,12 @@ redirect_from:
 
       <h2 class="card-title">Technical and Leadership Skills</h2>
       <p class="card-text">
-        Beyond the corporate world, I’ve applied my technical and leadership skills as a private chess coach, helping students develop critical thinking through tailored lessons. My strong technical skills include programming languages like Python, C#, and SQL, as well as analytics platforms such as Power BI.
+        Beyond the corporate world, I’ve applied my leadership skills as a private chess coach, where I guided elementary school students in building critical thinking and strategic decision-making. I also served as a Teaching Assistant under Dr. Linda Golden for Marketing for Social Profit at UT, leading classroom discussions and activities on the importance of social impact in business. Alongside these experiences, I have developed strong technical skills in Python, R, C#, SQL, and analytics platforms such as Power BI, which I strengthened through internships and academic projects. As a Master’s student, I’m now advancing into projects in data science programming, optimization, quantitative finance, unstructured data, and machine learning, continuing to grow at the intersection of business and technology.
       </p>
 
       <h2 class="card-title">Personal Interests</h2>
       <p class="card-text">
-        Outside of work, I’m passionate about blockchain, game theory, coding, and options trading. I’m a lifelong learner, fluent in French, and driven to explore the intersection of finance, technology, and data analytics. I also love to travel. Please check out my page on places I have
+        Outside of work, I’m passionate about blockchain, exploring the outdoors, game theory, coding, and options trading. I’m a lifelong learner, fluent in French, and driven to explore the intersection of finance, technology, and data analytics. I also love to travel. Please check out my page on places I have
         <a href="{{ '/travel/' | relative_url }}">traveled</a>. 🌍
       </p>
     </div>
