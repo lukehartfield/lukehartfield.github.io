@@ -47,6 +47,7 @@ redirect_from:
         Email: <a href="mailto:lukehartfield@utexas.edu?subject=MIS%20333K">lukehartfield@utexas.edu</a><br/>
         LinkedIn: <a href="https://www.linkedin.com/in/lukehartfield">linkedin.com/in/lukehartfield</a><br/>
         Instagram: <a href="https://www.instagram.com/luke_hartfield">instagram.com/luke_hartfield</a>
+        Github: <a href="https://github.com/lukehartfield">github.com/lukehartfield</a>
       </p>
     </div>
   </div>
