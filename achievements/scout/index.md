@@ -16,10 +16,10 @@ redirect_from:
 <div class="container">
   <div class="d-flex justify-content-center flex-wrap image-container">
     <img class="img-fluid rounded d-block m-2"
-         src="{{ '/assets/achievementimage/eagleproject-min.jpg' | relative_url }}"
+         src="{{ '/assets/achievementimage/eagleproject-min.JPG' | relative_url }}"
          alt="Eagle Project" loading="lazy" />
     <img class="img-fluid rounded d-block m-2"
-         src="{{ '/assets/achievementimage/seabase-min.jpg' | relative_url }}"
+         src="{{ '/assets/achievementimage/Seabase-min.jpg' | relative_url }}"
          alt="Seabase" loading="lazy" />
   </div>
 </div>
@@ -37,7 +37,7 @@ redirect_from:
         Through scouting, I have developed a strong sense for leadership, teamwork, adaptability, and resilience. I also have a commitment to civic responsibility instilled in me. I am fortunate to have volunteered for numerous organizations to make a positive impact on communities during my time as a Boy Scout.
       </p>
       <p class="card-text">
-        I have met some lifelong friends and have grown fond of the outdoors as a result of becoming an Eagle Scout. Even now, I am very adventurous and excited to always go explore the world and test my limits.
+        Earning my Eagle Scout rank introduced me to lifelong friends and sparked my love for the outdoors. That experience shaped my adventurous spirit, and to this day I’m eager to explore new places and test my limits.
       </p>
     </div>
   </div>
