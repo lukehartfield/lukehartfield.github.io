@@ -17,12 +17,20 @@ header h1 { margin: 0 }
 /* Divider used in your Razor: <hr class="hr-danger" /> */
 .hr-danger { border: 0; height: 2px; background: var(--bs-danger, #dc3545); opacity: .6; margin: 2rem 0 }
 
-/* Make achievement images match About page sizing */
+/* Prevent flex from squeezing images; keep aspect ratio */
 .image-container {
-  gap: 12px;               /* space between images */
+  display: flex;           /* you already have d-flex, this is just for clarity */
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;  /* don't stretch to same height */
 }
+
 .image-container img {
-  max-width: 320px;        /* tweak to taste: 260–360px */
-  width: 100%;
-  height: auto;
+  flex: 0 0 auto;          /* DON'T shrink images */
+  width: auto;             /* let intrinsic width/height drive size */
+  height: auto;            /* preserve aspect ratio */
+  max-width: 320px;        /* tweak size to match About page */
+  max-height: 320px;       /* optional cap; remove if you want taller */
+  object-fit: contain;     /* or 'cover' if you want crop instead of letterbox */
 }
+
