@@ -21,6 +21,9 @@ redirect_from:
     <img class="img-fluid rounded d-block m-2"
          src="{{ '/assets/achievementimage/Seabase-min.jpg' | relative_url }}"
          alt="Seabase" loading="lazy" />
+    <img class="img-fluid rounded d-block m-2"
+         src="{{ '/assets/achievementimage/familyscout.JPG' | relative_url }}"
+         alt="Seabase" loading="lazy" />
   </div>
 </div>
 
