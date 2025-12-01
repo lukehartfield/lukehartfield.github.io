@@ -1,5 +1,3 @@
-
-
 <div class="container my-4">
   <h1 class="mb-3">Diamond Price Prediction Using Machine Learning</h1>
   <p class="lead">
@@ -12,7 +10,7 @@
 
   <hr/>
 
-  <h2>Overview</h2>
+  <h2 class="mt-4">Overview</h2>
   <p>
     This project examined how characteristics such as carat, cut, clarity, color, and dimensional volume influence price. 
     Multiple machine learning models were trained and compared to understand driver importance and optimize predictive 
@@ -21,7 +19,7 @@
 
   <hr/>
 
-  <h2>Problem Framing</h2>
+  <h2 class="mt-4">Problem Framing</h2>
   <p>
     The task was defined as a supervised regression problem with the following guiding question:
   </p>
@@ -34,9 +32,9 @@
 
   <hr/>
 
-  <h2>Data Science Methods</h2>
+  <h2 class="mt-4">Data Science Methods</h2>
 
-  <h3>Exploratory Data Analysis</h3>
+  <h3 class="mt-3">Exploratory Data Analysis</h3>
   <ul>
     <li>Distribution plots for price, carat, and volume</li>
     <li>Correlation matrix to assess relationships between features</li>
@@ -44,14 +42,14 @@
     <li>Pairplots for joint feature relationships</li>
   </ul>
 
-  <h3>Feature Engineering</h3>
+  <h3 class="mt-3">Feature Engineering</h3>
   <ul>
     <li>Ordinal encoding for cut, color, and clarity</li>
     <li>Engineered a volume feature (length × width × depth)</li>
     <li>Handled outliers and extreme values in numeric fields</li>
   </ul>
 
-  <h3>Models Evaluated</h3>
+  <h3 class="mt-3">Models Evaluated</h3>
   <ul>
     <li>Linear Regression</li>
     <li>Decision Tree (with pruning)</li>
@@ -62,7 +60,7 @@
 
   <hr/>
 
-  <h2>Modeling Results</h2>
+  <h2 class="mt-4">Modeling Results</h2>
 
   <table class="table table-sm">
     <thead>
@@ -103,7 +101,7 @@
 
   <hr/>
 
-  <h2>Feature Insights</h2>
+  <h2 class="mt-4">Feature Insights</h2>
   <ul>
     <li>Carat and the engineered volume feature were the most influential price predictors</li>
     <li>Clarity and color provided additional predictive power</li>
@@ -112,11 +110,11 @@
 
   <hr/>
 
-  <h2>Key Skills Gained</h2>
+  <h2 class="mt-4">Key Skills Gained</h2>
 
   <div class="row">
     <div class="col-md-6">
-      <h3>Data and Modeling</h3>
+      <h3 class="mt-3">Data and Modeling</h3>
       <ul>
         <li>Feature engineering and ordinal encoding</li>
         <li>Working with large structured datasets</li>
@@ -125,7 +123,7 @@
       </ul>
     </div>
     <div class="col-md-6">
-      <h3>Evaluation and ML Concepts</h3>
+      <h3 class="mt-3">Evaluation and ML Concepts</h3>
       <ul>
         <li>Interpreting RMSE, MSE, and R²</li>
         <li>Assessing overfitting through residuals and train/test comparisons</li>
@@ -137,7 +135,7 @@
 
   <hr/>
 
-  <h2>Takeaways</h2>
+  <h2 class="mt-4">Takeaways</h2>
   <ul>
     <li>Engineered features such as volume significantly improve model performance</li>
     <li>Linear models struggle with nonlinear relationships common in pricing data</li>
@@ -147,11 +145,12 @@
 
   <hr/>
 
-  <h2>Potential Impact</h2>
+  <h2 class="mt-4">Potential Impact</h2>
   <ul>
     <li>Helps consumers assess fair pricing when purchasing diamonds</li>
     <li>Enables sellers to price more competitively and consistently</li>
     <li>Supports online marketplaces in enforcing transparent pricing structures</li>
+  </ul>
 </div>
 
 <hr/>
@@ -159,4 +158,3 @@
   <strong>Full code and report:</strong>
   <a href="https://github.com/lukehartfield/DiamondPricePrediction" target="_blank">Available here</a>.
 </p>
-
