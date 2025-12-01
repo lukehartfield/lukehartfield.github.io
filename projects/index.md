@@ -45,6 +45,22 @@
   </div>
 </div>
 
+<!-- Diamond Price Prediction -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body d-flex flex-column">
+      <h2 class="h5 card-title">Diamond Price Prediction – ML Model</h2>
+      <p class="card-text flex-grow-1">
+        Built and compared regression models on 53k+ diamonds and shipped a Random Forest model with 98% R² and ~$535 RMSE, revealing carat and volume as the dominant price drivers.
+      </p>
+      <a class="btn btn-outline-primary mt-2"
+         href="{{ '/projects/diamondmodel/' | relative_url }}">
+        View project
+      </a>
+    </div>
+  </div>
+</div>
+
 
 <p class="text-center mt-4">
   <a href="https://github.com/lukehartfield" target="_blank" class="btn btn-outline-secondary">
