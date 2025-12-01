@@ -81,3 +81,10 @@
     <li>Integrated seeded Excel-based datasets to simulate real marketplace data</li>
   </ul>
 </div>
+
+<hr/>
+<p class="mt-3">
+  <strong>Full code and documentation:</strong>
+  <a href="https://github.com/lukehartfield/BevoBnb" target="_blank">Available here</a>.
+</p>
+
