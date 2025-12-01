@@ -36,7 +36,7 @@
   </p>
 
   <h2>My Role: Project Manager &amp; Solutions Architect</h2>
-
+<ul>
   <h3>Project Management</h3>
   <ul>
     <li>Ran weekly client meetings and maintained communication with a stakeholder group serving 1,600+ learners</li>
@@ -115,3 +115,9 @@
 <p class="mt-3">
   <strong>Note:</strong> Scripts, documentation, and project materials are not publicly available due to client confidentiality.
 </p>
+<p class="mt-4">
+  <a class="btn btn-outline-secondary" href="{{ '/projects/' | relative_url }}">
+    ← Back to Projects
+  </a>
+</p>
+
