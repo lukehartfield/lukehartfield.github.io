@@ -1,0 +1,81 @@
+
+<h1>Ladies Let&apos;s Talk – Learner Matching System</h1>
+<hr/>
+
+<div class="container mt-3">
+  <p class="mb-4">
+    Ladies Let&apos;s Talk is a non-profit focused on connecting learners with volunteer partners for English practice and mentorship. 
+    This project rebuilt the matching and tracking process from manual spreadsheets into an automated data pipeline and web-based workflow.
+  </p>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h2 class="h5">Project Overview</h2>
+      <p class="card-text">
+        The organization previously relied on ad-hoc spreadsheets and manual matching, which did not scale as cohorts grew.
+        I designed a structured data model and matching system that ingests learner and volunteer submissions, applies
+        rule-based and score-based matching logic, and outputs clean match records that can be monitored over time.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mb-4">
+    <div class="d-flex justify-content-center flex-wrap image-container">
+      <img class="img-fluid rounded d-block m-2"
+           src="{{ '/assets/img/projects/ladies-lets-talk-overview.jpg' | relative_url }}"
+           alt="Ladies Let's Talk matching dashboard"
+           loading="lazy"
+           style="max-width:320px; height:auto;">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h2 class="h5">Role &amp; Responsibilities</h2>
+          <ul class="mb-0">
+            <li>Served as project lead for learner management and matching automation.</li>
+            <li>Designed relational tables for learners, volunteers, and matches to replace fragmented spreadsheets.</li>
+            <li>Implemented scripts to generate match scores based on availability, location, and partner preferences.</li>
+            <li>Documented workflows and created training materials for non-technical program staff.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h2 class="h5">Technical Highlights</h2>
+          <ul class="mb-0">
+            <li>Normalized intake form data into a consistent schema with validation and type-checking.</li>
+            <li>Built a matching algorithm that prioritizes preferred partners, time-zone alignment, and recurring time slots.</li>
+            <li>Added archival scripts to preserve historical cohorts while keeping active data sets lean.</li>
+            <li>Exposed key metrics (fill rate, unmatched learners, volunteer utilization) via simple dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h2 class="h5">Impact</h2>
+      <p class="card-text mb-2">
+        The system cut the time required to build each cohort&apos;s matches from days to hours, and reduced
+        errors caused by manual copy-paste operations. Program coordinators now have a repeatable process to:
+      </p>
+      <ul>
+        <li>Import new learner and volunteer data.</li>
+        <li>Run the matching algorithm with clear criteria.</li>
+        <li>Export final match lists and send introduction emails.</li>
+        <li>Track historical cohorts and re-engage volunteers over time.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <a class="btn btn-outline-primary" href="{{ '/projects/' | relative_url }}">&larr; Back to Projects</a>
+  </div>
+</div>
