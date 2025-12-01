@@ -23,7 +23,7 @@
   <hr/>
 
   <h2>System Overview</h2>
-
+<ul></ul>
   <h3>Customer Capabilities</h3>
   <ul>
     <li>Search properties by availability, location, price, rating, and amenities</li>
@@ -87,4 +87,10 @@
   <strong>Full code and documentation:</strong>
   <a href="https://github.com/lukehartfield/BevoBnb" target="_blank">Available here</a>.
 </p>
+<p class="mt-4">
+  <a class="btn btn-outline-secondary" href="{{ '/projects/' | relative_url }}">
+    ← Back to Projects
+  </a>
+</p>
+
 
