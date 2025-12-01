@@ -110,3 +110,8 @@
     <li>How to create documentation and training that empower non-technical teams to run technical systems</li>
   </ul>
 </div>
+
+<hr/>
+<p class="mt-3">
+  <strong>Note:</strong> Scripts, documentation, and project materials are not publicly available due to client confidentiality.
+</p>
