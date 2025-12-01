@@ -152,11 +152,6 @@
     <li>Supports online marketplaces in enforcing transparent pricing structures</li>
   </ul>
 </div>
-<p class="mt-4">
-  <a class="btn btn-outline-secondary" href="{{ '/projects/' | relative_url }}">
-    ← Back to Projects
-  </a>
-</p>
 
 
 <hr/>
@@ -164,3 +159,10 @@
   <strong>Full code and report:</strong>
   <a href="https://github.com/lukehartfield/DiamondPricePrediction" target="_blank">Available here</a>.
 </p>
+
+<p class="mt-4">
+  <a class="btn btn-outline-secondary" href="{{ '/projects/' | relative_url }}">
+    ← Back to Projects
+  </a>
+</p>
+
