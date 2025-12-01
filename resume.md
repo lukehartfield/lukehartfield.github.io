@@ -18,12 +18,12 @@ redirect_from:
 
 <div class="text-center my-4">
   <a class="btn btn-primary"
-     href="{{ '/assets/files/Luke_Hartfield_Resume.pdf' | relative_url }}"
+     href="{{ '/assets/Luke_Hartfield_Resume.pdf' | relative_url }}"
      download>
      Download Resume
   </a>
   <a class="btn btn-outline-secondary"
-     href="{{ '/assets/files/Luke_Hartfield_Resume.pdf' | relative_url }}"
+     href="{{ '/assets/Luke_Hartfield_Resume.pdf' | relative_url }}"
      target="_blank" rel="noopener">
      Open PDF
   </a>
