@@ -50,4 +50,9 @@ redirect_from: [/Home/Projects]
 </div>
 
 
+<p class="text-center mt-4">
+  <a href="https://github.com/lukehartfield" target="_blank" class="btn btn-outline-secondary">
+    View all repositories on GitHub
+  </a>
+</p>
 
