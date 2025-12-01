@@ -1,70 +1,57 @@
 
+
 <div class="container my-4">
-  <h1 class="mb-3">💎 Predicting Diamond Prices Using Machine Learning</h1>
+  <h1 class="mb-3">Diamond Price Prediction Using Machine Learning</h1>
   <p class="lead">
-    Data science project using tree-based ensemble models to predict diamond prices from physical and quality attributes
-    on a dataset of <strong>53,940 diamonds</strong>.
+    A data science project analyzing 53,940 diamonds to build and evaluate regression models predicting price based on 
+    physical and quality attributes.
   </p>
 
-  <p><strong>Project Type:</strong> Data Science Project – University of Texas at Austin<br/>
-     <strong>Stack:</strong> Python · Scikit-learn · XGBoost · Pandas · NumPy · Matplotlib/Seaborn · Jupyter</p>
+  <p><strong>Project Type:</strong> Data Science Project — University of Texas at Austin<br/>
+     <strong>Stack:</strong> Python · Scikit-learn · XGBoost · Pandas · NumPy · Matplotlib · Seaborn</p>
 
   <hr/>
 
-  <h2>📍 Overview</h2>
+  <h2>Overview</h2>
   <p>
-    This project explored how physical characteristics and quality attributes of diamonds (carat, cut, clarity, color,
-    and dimensions) influence price. Using a dataset of <strong>53,940 diamonds</strong>, we built and compared multiple
-    machine learning models to predict price and analyze driver importance.
+    This project examined how characteristics such as carat, cut, clarity, color, and dimensional volume influence price. 
+    Multiple machine learning models were trained and compared to understand driver importance and optimize predictive 
+    performance.
   </p>
-  <p>
-    The goals were:
-  </p>
-  <ul>
-    <li>Identify which features most strongly influence diamond prices</li>
-    <li>Develop a highly accurate regression model to predict future prices</li>
-  </ul>
 
   <hr/>
 
-  <h2>🧠 Problem Framing</h2>
+  <h2>Problem Framing</h2>
   <p>
-    We framed the task as a <strong>supervised regression</strong> problem:
+    The task was defined as a supervised regression problem with the following guiding question:
   </p>
   <blockquote>
     Can we accurately predict the price of a diamond using its physical and quality attributes?
   </blockquote>
   <p>
-    Models were evaluated using <strong>RMSE</strong>, <strong>MSE</strong>, <strong>R²</strong>, and residual analysis
-    on a held-out test set (80/20 train/test split).
+    Models were evaluated using RMSE, MSE, R², and residual diagnostics on an 80/20 train/test split.
   </p>
 
   <hr/>
 
-  <h2>🧪 Data Science Methods</h2>
+  <h2>Data Science Methods</h2>
 
-  <h3>Exploratory Data Analysis (EDA)</h3>
+  <h3>Exploratory Data Analysis</h3>
   <ul>
     <li>Distribution plots for price, carat, and volume</li>
-    <li>Correlation matrix to examine linear relationships among numeric features</li>
-    <li>Grouped bar charts to compare price distributions across cut, color, and clarity levels</li>
-    <li>Pairplots to visualize joint relationships between key variables</li>
+    <li>Correlation matrix to assess relationships between features</li>
+    <li>Bar charts comparing average price across cut, color, and clarity groupings</li>
+    <li>Pairplots for joint feature relationships</li>
   </ul>
 
   <h3>Feature Engineering</h3>
   <ul>
-    <li><strong>Ordinal encoding</strong> for quality attributes:
-      <ul>
-        <li>Cut (e.g., Fair &lt; Good &lt; Very Good &lt; Premium &lt; Ideal)</li>
-        <li>Color (e.g., J &lt; I &lt; … &lt; D)</li>
-        <li>Clarity (e.g., I3 &lt; I2 &lt; … &lt; IF)</li>
-      </ul>
-    </li>
-    <li>Created <strong>volume</strong> feature: length × width × depth</li>
-    <li>Checked for and handled outliers / extreme values in dimensions and carat</li>
+    <li>Ordinal encoding for cut, color, and clarity</li>
+    <li>Engineered a volume feature (length × width × depth)</li>
+    <li>Handled outliers and extreme values in numeric fields</li>
   </ul>
 
-  <h3>Models Compared</h3>
+  <h3>Models Evaluated</h3>
   <ul>
     <li>Linear Regression</li>
     <li>Decision Tree (with pruning)</li>
@@ -73,11 +60,9 @@
     <li>XGBoost Regressor</li>
   </ul>
 
-  <p>Validation strategy: <strong>80/20 Train/Test Split</strong></p>
-
   <hr/>
 
-  <h2>📊 Modeling Results</h2>
+  <h2>Modeling Results</h2>
 
   <table class="table table-sm">
     <thead>
@@ -89,22 +74,22 @@
     </thead>
     <tbody>
       <tr>
-        <td>❌ Linear Regression</td>
+        <td>Linear Regression</td>
         <td>1204.86</td>
         <td>0.91</td>
       </tr>
       <tr>
-        <td>⚠️ Decision Tree (Pruned)</td>
+        <td>Decision Tree (Pruned)</td>
         <td>1333.14</td>
         <td>0.89</td>
       </tr>
       <tr>
-        <td>✅ Random Forest</td>
+        <td>Random Forest</td>
         <td><strong>535.14</strong></td>
         <td><strong>0.98</strong></td>
       </tr>
       <tr>
-        <td>✅ XGBoost</td>
+        <td>XGBoost</td>
         <td>542.84</td>
         <td>0.88</td>
       </tr>
@@ -112,75 +97,59 @@
   </table>
 
   <p>
-    The <strong>Random Forest</strong> model achieved the best performance with an
-    <strong>R² of 0.98</strong> and an average prediction error (RMSE) of about <strong>$535</strong>,
-    significantly outperforming linear and single-tree models.
+    Random Forest produced the strongest performance, achieving an R² of 0.98 and an average prediction error (RMSE) 
+    of approximately $535.
   </p>
 
   <hr/>
 
-  <h2>📈 Feature Insights</h2>
-  <p>
-    Using model-based feature importance, we found:
-  </p>
+  <h2>Feature Insights</h2>
   <ul>
-    <li><strong>Carat</strong> and the engineered <strong>Volume</strong> feature are the dominant predictors of price</li>
-    <li><strong>Clarity</strong> and <strong>Color</strong> have strong secondary effects</li>
-    <li><strong>Cut</strong>, <strong>Depth</strong>, and <strong>Table</strong> contributed surprisingly little relative to carat and volume</li>
+    <li>Carat and the engineered volume feature were the most influential price predictors</li>
+    <li>Clarity and color provided additional predictive power</li>
+    <li>Cut, depth, and table contributed minimally relative to size and quality features</li>
   </ul>
-  <p>
-    This reinforced the idea that <em>size and overall quality</em> drive most of the variation,
-    and that domain-aware features (like volume) can add significant predictive power.
-  </p>
 
   <hr/>
 
-  <h2>🛠️ Key Skills Gained</h2>
+  <h2>Key Skills Gained</h2>
 
   <div class="row">
     <div class="col-md-6">
-      <h3>Data &amp; Modeling</h3>
+      <h3>Data and Modeling</h3>
       <ul>
-        <li>Feature engineering and encoding of ordinal categorical variables</li>
-        <li>Handling outliers and skewed distributions</li>
-        <li>Training and tuning tree-based ensemble methods (Bagging, Random Forest, XGBoost)</li>
-        <li>Using Scikit-learn pipelines for preprocessing and modeling</li>
+        <li>Feature engineering and ordinal encoding</li>
+        <li>Working with large structured datasets</li>
+        <li>Training ensemble models including Random Forest and XGBoost</li>
+        <li>Building Scikit-learn preprocessing and modeling workflows</li>
       </ul>
     </div>
     <div class="col-md-6">
-      <h3>Evaluation &amp; ML Thinking</h3>
+      <h3>Evaluation and ML Concepts</h3>
       <ul>
-        <li>Interpreting RMSE, MSE, and R² in a business context</li>
-        <li>Diagnosing overfitting via residuals and train/test performance</li>
-        <li>Understanding when linear models fail due to nonlinear interactions and multicollinearity</li>
-        <li>Balancing accuracy, complexity, and interpretability in model choice</li>
+        <li>Interpreting RMSE, MSE, and R²</li>
+        <li>Assessing overfitting through residuals and train/test comparisons</li>
+        <li>Understanding nonlinear interactions that challenge linear models</li>
+        <li>Balancing accuracy, interpretability, and model complexity</li>
       </ul>
     </div>
   </div>
 
   <hr/>
 
-  <h2>📌 Takeaways</h2>
+  <h2>Takeaways</h2>
   <ul>
-    <li>Raw features like carat and clarity are useful, but <strong>derived features</strong> (e.g., volume) can significantly boost performance.</li>
-    <li>Simple linear models struggled to capture complex, nonlinear relationships in the data.</li>
-    <li><strong>Tree-based ensembles</strong> (especially Random Forest) were far more effective and robust.</li>
-    <li>Even with highly predictive models, <strong>interpretability</strong> and domain knowledge are critical to trust and apply results.</li>
+    <li>Engineered features such as volume significantly improve model performance</li>
+    <li>Linear models struggle with nonlinear relationships common in pricing data</li>
+    <li>Tree-based ensembles capture complex interactions and offer superior accuracy</li>
+    <li>Interpretability and domain context remain essential even with high-performing models</li>
   </ul>
 
   <hr/>
 
-  <h2>💡 Potential Impact</h2>
-  <p>
-    A production-hardened version of this model could be used to:
-  </p>
+  <h2>Potential Impact</h2>
   <ul>
-    <li>Help <strong>consumers</strong> gauge whether they are overpaying for a diamond</li>
-    <li>Enable <strong>sellers</strong> to set more consistent, data-driven prices</li>
-    <li>Support <strong>online marketplaces</strong> in enforcing fair and transparent pricing bands</li>
-  </ul>
-  <p>
-    The overall approach is generalizable to other luxury goods or any domain where
-    structured numeric and ordinal features drive price.
-  </p>
+    <li>Helps consumers assess fair pricing when purchasing diamonds</li>
+    <li>Enables sellers to price more competitively and consistently</li>
+    <li>Supports online marketplaces in enforcing transparent pricing structures</li>
 </div>
