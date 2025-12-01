@@ -34,16 +34,20 @@ redirect_from: [/Home/Projects]
     <div class="card-body d-flex flex-column">
       <h2 class="h5 card-title">BevoBnB – Full-Stack Lodging Marketplace</h2>
       <p class="card-text flex-grow-1">
-        Developed a full-stack lodging platform with secure authentication, role-based workflows, reservation conflict logic, and dynamic pricing using ASP.NET Core MVC and SQL Server.
+        Developed a full-stack lodging platform with secure authentication, reservation conflict logic, dynamic pricing, and multi-role workflows using ASP.NET Core MVC and SQL Server.
       </p>
-      <a class="btn btn-outline-primary mt-2"
+      <a class="btn btn-outline-primary mb-2"
          href="{{ '/projects/bevobnb/' | relative_url }}">
         View project
+      </a>
+      <a class="btn btn-outline-secondary"
+         href="https://github.com/lukehartfield/BevoBnb"
+         target="_blank">
+        GitHub Repo
       </a>
     </div>
   </div>
 </div>
 
-    
 
 
