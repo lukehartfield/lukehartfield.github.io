@@ -30,6 +30,7 @@ redirect_from:
 <div class="text-center my-4">
   <div class="btn-group-lg d-flex justify-content-center gap-3 flex-wrap">
     <a href="{{ '/about/' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4">About Me</a>
+    <a href="{{ '/projects/' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4">Projects</a>
     <a href="{{ '/resume/' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4">Resume</a>
     <a href="{{ '/achievements/' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4">Achievements</a>
     <a href="{{ '/travel/' | relative_url }}" class="btn btn-outline-primary rounded-pill px-4">Travel</a>
