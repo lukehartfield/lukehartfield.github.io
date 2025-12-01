@@ -21,7 +21,7 @@ redirect_from: [/Home/Projects]
             Built an automated learner–volunteer matching pipeline and operations dashboard for a non-profit, using structured criteria, availability, and location to scale program capacity.
           </p>
           <a class="btn btn-outline-primary mt-2"
-             href="{{ '/projects/ladies-lets-talk/' | relative_url }}">
+             href="{{ '/projects/llt/' | relative_url }}">
             View project
           </a>
         </div>
