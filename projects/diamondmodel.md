@@ -153,3 +153,10 @@
     <li>Enables sellers to price more competitively and consistently</li>
     <li>Supports online marketplaces in enforcing transparent pricing structures</li>
 </div>
+
+<hr/>
+<p class="mt-3">
+  <strong>Full code and report:</strong>
+  <a href="https://github.com/lukehartfield/DiamondPricePrediction" target="_blank">Available here</a>.
+</p>
+
