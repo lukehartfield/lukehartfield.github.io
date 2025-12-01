@@ -1,8 +1,4 @@
----
-layout: default
-title: Projects
-redirect_from: [/Home/Projects]
----
+
 <h1>Projects</h1>
 <hr/>
 
