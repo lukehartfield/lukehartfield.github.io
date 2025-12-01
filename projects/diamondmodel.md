@@ -33,7 +33,7 @@
   <hr/>
 
   <h2 class="mt-4">Data Science Methods</h2>
-
+<ul></ul>
   <h3 class="mt-3">Exploratory Data Analysis</h3>
   <ul>
     <li>Distribution plots for price, carat, and volume</li>
@@ -152,6 +152,12 @@
     <li>Supports online marketplaces in enforcing transparent pricing structures</li>
   </ul>
 </div>
+<p class="mt-4">
+  <a class="btn btn-outline-secondary" href="{{ '/projects/' | relative_url }}">
+    ← Back to Projects
+  </a>
+</p>
+
 
 <hr/>
 <p class="mt-3">
