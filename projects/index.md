@@ -57,6 +57,11 @@
          href="{{ '/projects/diamondmodel/' | relative_url }}">
         View project
       </a>
+      <a class="btn btn-outline-secondary"
+         href="https://github.com/lukehartfield/DiamondPricePrediction"
+         target="_blank">
+        GitHub Repo
+      </a>
     </div>
   </div>
 </div>
