@@ -110,6 +110,28 @@
 
   <hr/>
 
+  <hr/>
+
+<h2 class="mt-4">Selected Visualizations</h2>
+<p>Below are two representative charts highlighting the most important insights and model performance.</p>
+
+<div class="row mt-3">
+  <div class="col-md-6 mb-3">
+    <img src="{{ '/assets/diamond/correlation.jpg' | relative_url }}"
+         alt="Feature Importance"
+         class="img-fluid rounded shadow-sm" />
+    <p class="mt-2 text-muted">Feature importance ranking showing carat and volume as dominant predictors.</p>
+  </div>
+
+  <div class="col-md-6 mb-3">
+    <img src="{{ '/assets/diamond/randomforest.jpg' | relative_url }}"
+         alt="Random Forest Actual vs Predicted"
+         class="img-fluid rounded shadow-sm" />
+    <p class="mt-2 text-muted">Random Forest regression performance with strong alignment to the 45° line.</p>
+  </div>
+</div>
+
+
   <h2 class="mt-4">Key Skills Gained</h2>
 
   <div class="row">
