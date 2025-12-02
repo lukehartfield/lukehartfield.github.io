@@ -87,18 +87,13 @@
 <h2 class="mt-4">Mini Demo</h2>
 <p>
   The original BevoBnB web application and SQL database have been decommissioned since course completion, 
-  but the screenshots below provide a brief look at the user interface and core functionality from the final deployed version.
+  but the screenshot below provides a brief look at the user interface and core functionality from the final deployed version.
 </p>
 
 <div class="row mt-3">
   <div class="col-md-6 mb-3">
     <img src="{{ '/assets/bevobnb/bevobnb.jpg' | relative_url }}"
          alt="BevoBnB Homepage"
-         class="img-fluid rounded shadow-sm" />
-  </div>
-  <div class="col-md-6 mb-3">
-    <img src="{{ '/assets/bevobnb/bevobnbprop.PNG' | relative_url }}"
-         alt="BevoBnB Property Page"
          class="img-fluid rounded shadow-sm" />
   </div>
 </div>
