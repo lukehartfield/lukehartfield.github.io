@@ -11,10 +11,10 @@
 <div class="col-md-6 col-lg-4 mb-4">
   <div class="card h-100">
     <div class="card-body d-flex flex-column">
-      <h2 class="h5 card-title">Keating Resources - AI-Driven Property Intelligence</h2>
+      <h2 class="h5 card-title">AI-Driven Property Intelligence</h2>
       <p class="card-text flex-grow-1">
         Current Spring 2026 Master’s capstone developing LLM-powered services for geospatial search, investment scoring, 
-        and automated parcel data ingestion at nationwide scale.
+        and automated parcel data ingestion at nationwide scale for Keating Resources.
       </p>
       <a class="btn btn-outline-primary mt-2"
          href="{{ '/projects/keating/' | relative_url }}">
