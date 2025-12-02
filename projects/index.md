@@ -63,6 +63,8 @@
   </div>
 </div>
 
+<div class="w-100 d-none d-lg-block"></div>
+
 <!-- Diamond Price Prediction -->
 <div class="col-md-6 col-lg-4 mb-4">
   <div class="card h-100">
