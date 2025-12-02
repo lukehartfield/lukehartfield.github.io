@@ -127,7 +127,7 @@
     <img src="{{ '/assets/diamond/randomforest.jpg' | relative_url }}"
          alt="Random Forest Actual vs Predicted"
          class="img-fluid rounded shadow-sm" />
-    <p class="mt-2 text-muted">Random Forest regression performance with strong alignment to the 45° line.</p>
+    <p class="mt-2 text-muted">Random Forest regression performance.</p>
   </div>
 </div>
 
