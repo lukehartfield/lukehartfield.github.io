@@ -117,7 +117,6 @@
     <li>How to build matching algorithms that handle large, real-world datasets and constraints</li>
     <li>How to create documentation and training that empower non-technical teams to run technical systems</li>
   </ul>
-</div>
 
 <hr/>
 <p class="mt-3">
