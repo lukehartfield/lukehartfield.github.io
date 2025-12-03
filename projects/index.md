@@ -14,7 +14,7 @@
         <div class="card-body d-flex flex-column">
           <h2 class="h5 card-title">AI-Driven Property Intelligence</h2>
           <p class="card-text flex-grow-1">
-            Current Spring 2026 Master’s capstone developing LLM-powered services for geospatial search, investment
+           In progress: Spring 2026 MSBA capstone developing LLM-powered services for geospatial search, investment
             scoring, and automated parcel data ingestion at nationwide scale for Keating Resources.
           </p>
           <a class="btn btn-outline-primary mt-2"
