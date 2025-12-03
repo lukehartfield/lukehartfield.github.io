@@ -30,7 +30,7 @@
         <div class="card-body d-flex flex-column">
           <h2 class="h5 card-title">Ladies Let&apos;s Talk – Capstone</h2>
           <p class="card-text flex-grow-1">
-            Built an automated learner-volunteer matching pipeline and operations dashboard for a non-profit, using
+            Built an automated learner-volunteer matching pipeline and operations dashboard in Airtable for a non-profit, using
             structured criteria, availability, and location to scale program capacity.
           </p>
           <a class="btn btn-outline-primary mt-2"
