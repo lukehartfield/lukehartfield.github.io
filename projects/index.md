@@ -24,6 +24,28 @@
         </div>
       </div>
     </div>
+    
+    <!-- Smart Doc Approver -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="card h-100">
+    <div class="card-body d-flex flex-column">
+      <h2 class="h5 card-title">Smart Doc Approver – Agentic Receipt Pipeline</h2>
+      <p class="card-text flex-grow-1">
+        Built an agentic, ensemble-based receipt processing system that classifies documents, runs OCR,
+        extracts fields, detects anomalies, and routes approvals using confidence-based decisioning.
+      </p>
+      <a class="btn btn-outline-primary mb-2"
+         href="{{ '/projects/smart-doc-approver/' | relative_url }}">
+        View project
+      </a>
+      <a class="btn btn-outline-secondary"
+         href="https://github.com/lukehartfield/SmartDocApprover"
+         target="_blank">
+        GitHub Repo
+      </a>
+    </div>
+  </div>
+</div>
     <!-- Ladies Let's Talk -->
     <div class="col-md-6 col-lg-4 mb-4">
       <div class="card h-100">
