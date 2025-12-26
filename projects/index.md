@@ -34,7 +34,7 @@
         extracts fields, detects anomalies, and routes approvals using confidence-based decisioning.
       </p>
       <a class="btn btn-outline-primary mb-2"
-         href="{{ '/projects/smart-doc-approver/' | relative_url }}">
+         href="{{ '/projects/smartdocapprover/' | relative_url }}">
         View project
       </a>
       <a class="btn btn-outline-secondary"
@@ -61,6 +61,8 @@
         </div>
       </div>
     </div>
+     <!-- Force new row on large screens (3 across then 1) -->
+    <div class="w-100 d-none d-lg-block"></div>
     <!-- BevoBnB -->
     <div class="col-md-6 col-lg-4 mb-4">
       <div class="card h-100">
@@ -82,8 +84,6 @@
         </div>
       </div>
     </div>
-    <!-- Force new row on large screens (3 across then 1) -->
-    <div class="w-100 d-none d-lg-block"></div>
     <!-- Diamond Price Prediction -->
     <div class="col-md-6 col-lg-4 mb-4">
       <div class="card h-100">
