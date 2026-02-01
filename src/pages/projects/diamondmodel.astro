@@ -1,0 +1,162 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Card from '../../components/Card.astro';
+---
+
+<MainLayout title="Diamond Price Prediction">
+  <a href="/projects/" class="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-slate-700 mb-6">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Back to Projects
+  </a>
+
+  <h1 class="text-3xl font-bold text-slate-900 mb-4">Diamond Price Prediction Using Machine Learning</h1>
+  <p class="text-lg text-slate-600 mb-6">
+    A data science project analyzing 53,940 diamonds to build and evaluate regression models
+    predicting price based on physical and quality attributes.
+  </p>
+
+  <div class="flex flex-wrap gap-3 mb-8">
+    <a
+      href="https://github.com/lukehartfield/DiamondPricePrediction"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 transition-colors"
+    >
+      GitHub Repository
+    </a>
+  </div>
+
+  <Card class="p-6 mb-8">
+    <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+      <div>
+        <dt class="font-medium text-slate-900">Course</dt>
+        <dd class="text-slate-600">Data Science Project, UT Austin</dd>
+      </div>
+      <div>
+        <dt class="font-medium text-slate-900">Stack</dt>
+        <dd class="text-slate-600">Python, Scikit-learn, XGBoost, Pandas, NumPy, Matplotlib, Seaborn</dd>
+      </div>
+    </dl>
+  </Card>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Overview</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 leading-relaxed mb-4">
+        This project examined how characteristics such as carat, cut, clarity, color, and dimensional volume
+        influence price. Multiple machine learning models were trained and compared to understand driver
+        importance and optimize predictive performance.
+      </p>
+      <blockquote class="border-l-4 border-primary-200 pl-4 italic text-slate-600">
+        Can we accurately predict the price of a diamond using its physical and quality attributes?
+      </blockquote>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Modeling Results</h2>
+    <Card class="p-6 overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-slate-200">
+            <th class="text-left py-2 font-medium text-slate-900">Model</th>
+            <th class="text-right py-2 font-medium text-slate-900">RMSE</th>
+            <th class="text-right py-2 font-medium text-slate-900">R²</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          <tr>
+            <td class="py-2 text-slate-600">Linear Regression</td>
+            <td class="py-2 text-right text-slate-600">1204.86</td>
+            <td class="py-2 text-right text-slate-600">0.91</td>
+          </tr>
+          <tr>
+            <td class="py-2 text-slate-600">Decision Tree (Pruned)</td>
+            <td class="py-2 text-right text-slate-600">1333.14</td>
+            <td class="py-2 text-right text-slate-600">0.89</td>
+          </tr>
+          <tr class="bg-primary-50">
+            <td class="py-2 font-medium text-slate-900">Random Forest</td>
+            <td class="py-2 text-right font-medium text-slate-900">535.14</td>
+            <td class="py-2 text-right font-medium text-slate-900">0.98</td>
+          </tr>
+          <tr>
+            <td class="py-2 text-slate-600">XGBoost</td>
+            <td class="py-2 text-right text-slate-600">542.84</td>
+            <td class="py-2 text-right text-slate-600">0.88</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="mt-4 text-slate-600">
+        Random Forest produced the strongest performance with an R² of 0.98 and average prediction
+        error (RMSE) of approximately $535.
+      </p>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Feature Insights</h2>
+    <Card class="p-6">
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Carat and the engineered volume feature were the most influential price predictors
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Clarity and color provided additional predictive power
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Cut, depth, and table contributed minimally relative to size and quality features
+        </li>
+      </ul>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Visualizations</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <Card class="p-4">
+        <img
+          src="/assets/diamond/correlation.jpg"
+          alt="Feature Importance"
+          class="rounded-lg w-full"
+          loading="lazy"
+        />
+        <p class="mt-2 text-sm text-slate-500">Feature importance ranking</p>
+      </Card>
+      <Card class="p-4">
+        <img
+          src="/assets/diamond/randomforest.jpg"
+          alt="Random Forest Performance"
+          class="rounded-lg w-full"
+          loading="lazy"
+        />
+        <p class="mt-2 text-sm text-slate-500">Random Forest actual vs predicted</p>
+      </Card>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Key Takeaways</h2>
+    <Card class="p-6">
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Engineered features such as volume significantly improve model performance
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Linear models struggle with nonlinear relationships common in pricing data
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Tree-based ensembles capture complex interactions and offer superior accuracy
+        </li>
+      </ul>
+    </Card>
+  </section>
+</MainLayout>

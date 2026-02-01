@@ -1,0 +1,54 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Card from '../../components/Card.astro';
+---
+
+<MainLayout title="AI-Driven Property Intelligence">
+  <a href="/projects/" class="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-slate-700 mb-6">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Back to Projects
+  </a>
+
+  <h1 class="text-3xl font-bold text-slate-900 mb-4">AI-Driven Property Intelligence</h1>
+  <p class="text-lg text-slate-600 mb-6">
+    Ongoing Spring 2026 Master's capstone focused on developing LLM-assisted backend services
+    for nationwide parcel intelligence, investment scoring, and natural-language geospatial search.
+  </p>
+
+  <div class="flex flex-wrap gap-2 mb-8">
+    <span class="px-3 py-1 text-xs font-medium bg-amber-100 text-amber-800 rounded-full">In Progress</span>
+    <span class="px-3 py-1 text-xs font-medium bg-slate-100 text-slate-600 rounded-full">MSBA Capstone</span>
+  </div>
+
+  <Card class="p-6 mb-8">
+    <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+      <div>
+        <dt class="font-medium text-slate-900">Roles</dt>
+        <dd class="text-slate-600">Machine Learning Engineer, Backend Engineer, Data Architect</dd>
+      </div>
+      <div>
+        <dt class="font-medium text-slate-900">Stack</dt>
+        <dd class="text-slate-600">Python, FastAPI, PostGIS, GeoPandas, AWS, LLM APIs, ETL Pipelines</dd>
+      </div>
+    </dl>
+  </Card>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Project Overview</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 leading-relaxed mb-4">
+        This capstone is conducted in partnership with <strong class="text-slate-900">Keating Resources</strong>,
+        a real estate investment and development firm operating across the United States. The objective is to
+        design and prototype an intelligent platform capable of evaluating land opportunities using geospatial
+        data, LLM-based querying, and automated data ingestion from heterogeneous parcel datasets.
+      </p>
+      <p class="text-slate-600 leading-relaxed">
+        The project is currently in progress, with active development focused on data architecture, LLM integration,
+        scoring methodology, and API design. Final deliverables will include a functioning backend prototype,
+        defensible investment scoring model, and documentation for future expansion.
+      </p>
+    </Card>
+  </section>
+</MainLayout>

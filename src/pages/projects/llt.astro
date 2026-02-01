@@ -1,0 +1,137 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Card from '../../components/Card.astro';
+---
+
+<MainLayout title="Ladies Let's Talk">
+  <a href="/projects/" class="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-slate-700 mb-6">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Back to Projects
+  </a>
+
+  <h1 class="text-3xl font-bold text-slate-900 mb-4">Ladies Let's Talk: EPP Volunteer Matching</h1>
+  <p class="text-lg text-slate-600 mb-6">
+    Client-facing capstone project where I led project management, solution architecture, and development
+    to automate the matching process for a program serving more than <strong>1,600 learners</strong>
+    and <strong>900+ volunteers</strong>.
+  </p>
+
+  <div class="flex flex-wrap gap-3 mb-8">
+    <a
+      href="https://www.lltaustin.org/programs/english-conversation-program"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 transition-colors"
+    >
+      Program Website
+    </a>
+  </div>
+
+  <Card class="p-6 mb-8">
+    <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+      <div>
+        <dt class="font-medium text-slate-900">Roles</dt>
+        <dd class="text-slate-600">Project Manager, Solutions Architect, Lead Developer</dd>
+      </div>
+      <div>
+        <dt class="font-medium text-slate-900">Stack</dt>
+        <dd class="text-slate-600">Airtable, JavaScript, Automation Scripts, Trello, Slack</dd>
+      </div>
+    </dl>
+  </Card>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Project Goal</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 leading-relaxed mb-4">
+        The English Practice Partners (EPP) program pairs immigrant and refugee women with volunteer
+        English-speaking partners. Before this project, the entire process was done manually in Google Sheets
+        across hundreds of participants per cohort.
+      </p>
+      <p class="text-slate-600 leading-relaxed">
+        Our goal was to build a scalable, automated system capable of reliably matching large cohorts
+        (150–250 participants each cycle) while reducing coordinator workload and eliminating manual matching errors.
+      </p>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Key Metrics</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <Card class="p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">198+</div>
+        <div class="text-sm text-slate-600">Pairs Matched</div>
+      </Card>
+      <Card class="p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">98.7%</div>
+        <div class="text-sm text-slate-600">Completion Rate</div>
+      </Card>
+      <Card class="p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">&lt;60s</div>
+        <div class="text-sm text-slate-600">Matching Time</div>
+      </Card>
+      <Card class="p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">400+</div>
+        <div class="text-sm text-slate-600">Emails/Cohort</div>
+      </Card>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Core Features</h2>
+    <Card class="p-6">
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          <strong>Three Matching Algorithms:</strong> Preferred Partner, Randomized, and Location/Availability-Based
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          <strong>Automated Email Workflows:</strong> 400+ templated emails per cohort
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          <strong>ERD with 5 major tables</strong> and 200+ linked fields
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          <strong>Dashboard Interfaces:</strong> Match progress, unmatched users, and key metrics
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          <strong>Archival Scripts:</strong> Preserve match records into master tables
+        </li>
+      </ul>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Impact</h2>
+    <Card class="p-6">
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Reduced matching time from hours of manual work to under 60 seconds
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Eliminated hundreds of manual data-entry errors
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Enabled LLT to run large-scale cohorts without external developer support
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Created a scalable model supporting 500+ matches per cycle
+        </li>
+      </ul>
+    </Card>
+  </section>
+
+  <p class="text-sm text-slate-500 italic">
+    Note: Scripts, documentation, and project materials are not publicly available due to client confidentiality.
+  </p>
+</MainLayout>

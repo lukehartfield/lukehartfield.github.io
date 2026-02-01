@@ -1,0 +1,38 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import PhotoGrid from '../components/PhotoGrid.astro';
+import Card from '../components/Card.astro';
+
+const photos = [
+  { src: '/assets/travelimages/cliffjumping-min.JPG', alt: 'Dubrovnik cliff jumping', caption: 'Dubrovnik, Croatia' },
+  { src: '/assets/travelimages/nepalriver-min.JPEG', alt: 'Trishuli River', caption: 'Trishuli, Nepal' },
+  { src: '/assets/travelimages/louvre-min.jpg', alt: 'Louvre Museum', caption: 'Paris, France' },
+  { src: '/assets/travelimages/tahiti-min.JPG', alt: 'Tahiti coastline', caption: 'Tahiti, French Polynesia' },
+  { src: '/assets/travelimages/taj-min.jpg', alt: 'Taj Mahal', caption: 'Agra, India' },
+  { src: '/assets/travelimages/yucatan-min.JPG', alt: 'Yucatán cenote', caption: 'Yucatán, Mexico' },
+];
+---
+
+<MainLayout title="Travel">
+  <h1 class="text-3xl font-bold text-slate-900 mb-8">Travel</h1>
+
+  <PhotoGrid photos={photos} />
+
+  <Card class="p-6 mt-8">
+    <p class="text-slate-600 leading-relaxed mb-4">
+      Traveling is a huge passion of mine. Since coming to college, I've been to 14 different countries.
+      I've been fortunate to explore the world using standby benefits, learning about unique cultures,
+      meeting amazing people, and gaining priceless memories. I plan to keep traveling and going to places
+      I've never been before.
+    </p>
+    <p class="text-slate-600 leading-relaxed">
+      Many of these photos are courtesy of my good friend and travel buddy,
+      <a
+        href="https://www.abglobalized.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-primary-600 hover:text-primary-700 font-medium"
+      >Austin</a>.
+    </p>
+  </Card>
+</MainLayout>

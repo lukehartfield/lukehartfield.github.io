@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Bash(cmd /c \"npx claude-code-templates@latest --skill=creative-design/frontend-design --yes 2>&1\")",
+      "Bash(powershell -Command \"npx claude-code-templates@latest --skill=creative-design/frontend-design --yes\")",
+      "Bash(npm init:*)",
+      "Bash(npx create-astro@latest . --template minimal --install --no-git)",
+      "Bash(npm install:*)",
+      "Bash(xcopy:*)",
+      "Bash(powershell:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

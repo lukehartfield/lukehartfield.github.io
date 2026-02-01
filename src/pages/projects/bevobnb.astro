@@ -1,0 +1,132 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Card from '../../components/Card.astro';
+---
+
+<MainLayout title="BevoBnB">
+  <a href="/projects/" class="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-slate-700 mb-6">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Back to Projects
+  </a>
+
+  <h1 class="text-3xl font-bold text-slate-900 mb-4">BevoBnB: Full-Stack Lodging Marketplace</h1>
+  <p class="text-lg text-slate-600 mb-6">
+    Academic capstone project where I built a complete lodging marketplace with secure authentication,
+    role-based workflows, reservation conflict logic, and Azure deployment.
+  </p>
+
+  <div class="flex flex-wrap gap-3 mb-8">
+    <a
+      href="https://github.com/lukehartfield/BevoBnb"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 transition-colors"
+    >
+      GitHub Repository
+    </a>
+  </div>
+
+  <Card class="p-6 mb-8">
+    <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+      <div>
+        <dt class="font-medium text-slate-900">Course</dt>
+        <dd class="text-slate-600">MIS 333K, UT Austin</dd>
+      </div>
+      <div>
+        <dt class="font-medium text-slate-900">Stack</dt>
+        <dd class="text-slate-600">ASP.NET Core MVC, SQL Server, C#, Microsoft Identity, Azure</dd>
+      </div>
+    </dl>
+  </Card>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Project Goal</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 leading-relaxed">
+        Design and implement a production-style lodging platform for a fictional startup, with full support
+        for multi-role user flows, secure authentication, and real business logic governing pricing,
+        reservations, and reviews. The project simulated real-world engineering constraints and emphasized
+        software engineering best practices.
+      </p>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">System Capabilities</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <Card class="p-5">
+        <h3 class="font-semibold text-slate-900 mb-3">Customer</h3>
+        <ul class="space-y-1 text-sm text-slate-600">
+          <li>• Search by availability, location, price</li>
+          <li>• Book with dynamic pricing</li>
+          <li>• Leave 1–5 star reviews</li>
+          <li>• View and cancel reservations</li>
+        </ul>
+      </Card>
+      <Card class="p-5">
+        <h3 class="font-semibold text-slate-900 mb-3">Host</h3>
+        <ul class="space-y-1 text-sm text-slate-600">
+          <li>• Create and manage listings</li>
+          <li>• Set weekday/weekend pricing</li>
+          <li>• Block unavailable dates</li>
+          <li>• View earnings reports</li>
+        </ul>
+      </Card>
+      <Card class="p-5">
+        <h3 class="font-semibold text-slate-900 mb-3">Admin</h3>
+        <ul class="space-y-1 text-sm text-slate-600">
+          <li>• Manage all user accounts</li>
+          <li>• Approve listings</li>
+          <li>• Mediate review disputes</li>
+          <li>• View platform analytics</li>
+        </ul>
+      </Card>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Technical Implementation</h2>
+    <Card class="p-6">
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Microsoft Identity for secure authentication and role-based access
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Relational SQL Server database with seeded data and referential integrity
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Conflict-aware reservation engine preventing overlapping stays
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Dynamic pricing logic with discounts, fees, and taxes
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Deployed to Azure App Service with Azure SQL Database
+        </li>
+      </ul>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Demo</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 mb-4">
+        The original web application and SQL database have been decommissioned since course completion.
+        The screenshot below shows the user interface from the final deployed version.
+      </p>
+      <img
+        src="/assets/bevobnb/bevobnb.jpg"
+        alt="BevoBnB Homepage"
+        class="rounded-lg shadow-sm max-w-md"
+        loading="lazy"
+      />
+    </Card>
+  </section>
+</MainLayout>

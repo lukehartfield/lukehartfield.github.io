@@ -1,0 +1,83 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Card from '../components/Card.astro';
+---
+
+<MainLayout title="About">
+  <h1 class="text-3xl font-bold text-slate-900 mb-8">About Me</h1>
+
+  <Card class="p-6 mb-8">
+    <p class="text-slate-600 leading-relaxed">
+      I'm a recent graduate from The University of Texas at Austin with a BBA in Management Information Systems
+      and a current MS in Business Analytics student (Class of 2026). I'm driven by using technology to solve
+      complex, data-driven problems and building systems that bridge analytics, engineering, and product.
+    </p>
+  </Card>
+
+  <!-- Rule 2: Photo gallery - natural height -->
+  <div class="image-container mb-12">
+    <div class="photo-box-sm">
+      <img
+        src="/assets/images/jpmorgan-min.jpg"
+        alt="JPMorgan Chase"
+        loading="lazy"
+      />
+    </div>
+    <div class="photo-box-sm">
+      <img
+        src="/assets/images/honors-min.jpg"
+        alt="Honors recognition"
+        loading="lazy"
+      />
+    </div>
+    <div class="photo-box-sm">
+      <img
+        src="/assets/newimages/southwest2-min.jpg"
+        alt="Southwest Airlines"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <div class="space-y-8">
+    <section>
+      <h2 class="text-xl font-semibold text-slate-900 mb-4">Professional Experience</h2>
+      <Card class="p-6">
+        <p class="text-slate-600 leading-relaxed">
+          My work spans enterprise data governance at Southwest Airlines, where I improved GDPR compliance dashboards,
+          mapped 500+ data assets, and presented an agentic AI travel planner to senior leadership; commercial banking
+          operations at JPMorgan Chase, where I developed process improvement skills; and project management and data
+          solutions with nFLXn Consulting and teamUpHR. These roles have equipped me to lead projects, analyze data,
+          and build innovative solutions using AI, automation, and data visualization.
+        </p>
+      </Card>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold text-slate-900 mb-4">Technical & Leadership Skills</h2>
+      <Card class="p-6">
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Beyond corporate roles, I've applied my leadership as a private chess coach, guiding elementary students in
+          critical thinking and strategy. I also served as a Teaching Assistant under Dr. Linda Golden for Marketing
+          for Social Profit at UT, leading classroom discussions on social impact in business.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          I've developed strong technical skills in Python, R, C#, SQL, and platforms like Power BI through internships
+          and academic projects. As a Master's student, I'm advancing into data science programming, optimization,
+          quantitative finance, unstructured data, and machine learning.
+        </p>
+      </Card>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold text-slate-900 mb-4">Interests</h2>
+      <Card class="p-6">
+        <p class="text-slate-600 leading-relaxed">
+          Outside of work, I'm interested in blockchain, the outdoors, game theory, coding, and options trading.
+          I'm fluent in French and driven to explore the intersection of finance, technology, and data analytics.
+          I also love to travel—check out my <a href="/travel/" class="text-primary-600 hover:text-primary-700 font-medium">travel page</a> to see where I've been.
+        </p>
+      </Card>
+    </section>
+  </div>
+</MainLayout>

@@ -1,0 +1,127 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Card from '../../components/Card.astro';
+---
+
+<MainLayout title="Smart Doc Approver">
+  <a href="/projects/" class="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-slate-700 mb-6">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Back to Projects
+  </a>
+
+  <h1 class="text-3xl font-bold text-slate-900 mb-4">Smart Doc Approver</h1>
+  <p class="text-lg text-slate-600 mb-6">
+    An agentic, ensemble-based machine learning system for automated receipt classification,
+    field extraction, anomaly detection, and approval routing.
+  </p>
+
+  <div class="flex flex-wrap gap-3 mb-8">
+    <a
+      href="https://huggingface.co/spaces/Rogue2003/Receipt_Agent"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 transition-colors"
+    >
+      Live Demo
+    </a>
+    <a
+      href="https://medium.com/@lukehartfield_25231/smart-doc-approver-building-an-agentic-receipt-pipeline-that-actually-works-79ad74614854"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors"
+    >
+      Medium Article
+    </a>
+    <a
+      href="https://github.com/lukehartfield/SmartDocApprover"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors"
+    >
+      GitHub
+    </a>
+  </div>
+
+  <Card class="p-6 mb-8">
+    <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+      <div>
+        <dt class="font-medium text-slate-900">Course</dt>
+        <dd class="text-slate-600">MIS 382N (Advanced Machine Learning), UT Austin</dd>
+      </div>
+      <div>
+        <dt class="font-medium text-slate-900">Stack</dt>
+        <dd class="text-slate-600">Python, PyTorch, Hugging Face, LangGraph, OCR Tooling, Gradio</dd>
+      </div>
+    </dl>
+  </Card>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Technical Overview</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 leading-relaxed mb-4">
+        Smart Doc Approver is designed as a modular, agentic pipeline that mimics how a human analyst
+        reviews receipts. Instead of relying on a single model, the system orchestrates multiple
+        specialized models and routes documents based on confidence and validation checks.
+      </p>
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Document classification using an ensemble of vision models (ResNet + ViT)
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          OCR ensemble with confidence-based retries for difficult receipts
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Field extraction via LayoutLM-based token classification, rules, and NER
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Anomaly detection using an ensemble of unsupervised and tree-based models
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Agentic orchestration using LangGraph to route approve / review / reject decisions
+        </li>
+      </ul>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Why an Agentic Approach</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 leading-relaxed">
+        Traditional document pipelines fail on edge cases and lack adaptability. This system uses shared
+        state, confidence thresholds, and conditional routing so that uncertain documents trigger additional
+        processing or human review instead of hard failures.
+      </p>
+    </Card>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">Outcomes</h2>
+    <Card class="p-6">
+      <ul class="space-y-2 text-slate-600">
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Improved end-to-end accuracy through ensemble modeling
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Reduced unnecessary compute via confidence-based routing
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Human-in-the-loop feedback designed for continual improvement
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-primary-600 mt-1">•</span>
+          Fully interactive demo deployed via Hugging Face Spaces
+        </li>
+      </ul>
+    </Card>
+  </section>
+</MainLayout>

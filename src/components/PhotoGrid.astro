@@ -1,0 +1,55 @@
+---
+/**
+ * Photo/gallery images - Rule 2
+ * Natural height, no forced dimensions, no object-fit: cover
+ */
+interface Photo {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
+interface Props {
+  photos: Photo[];
+  columns?: 2 | 3;
+}
+
+const { photos, columns = 3 } = Astro.props;
+const gridCols = columns === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
+---
+
+<div class={`grid grid-cols-1 ${gridCols} gap-4 sm:gap-6`}>
+  {photos.map((photo) => (
+    <div class="photo-box">
+      <img
+        src={photo.src}
+        alt={photo.alt}
+        loading="lazy"
+        class="photo-box-img"
+      />
+      {photo.caption && (
+        <p class="photo-caption">{photo.caption}</p>
+      )}
+    </div>
+  ))}
+</div>
+
+<style>
+  .photo-box {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .photo-box-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .photo-caption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+    text-align: center;
+  }
+</style>

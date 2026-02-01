@@ -1,0 +1,41 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const achievements = [
+  {
+    title: 'Level 10 Gymnast',
+    image: '/assets/achievementimage/regionals-min.JPG',
+    href: '/achievements/gymnastics/',
+  },
+  {
+    title: 'Eagle Scout',
+    image: '/assets/achievementimage/eaglescout-min.jpg',
+    href: '/achievements/scout/',
+  },
+];
+---
+
+<MainLayout title="Achievements">
+  <h1 class="text-3xl font-bold text-slate-900 mb-4">Achievements</h1>
+  <p class="text-slate-600 mb-8">
+    Personal accomplishments that have shaped who I am today.
+  </p>
+
+  <!-- Rule 1: Card images - fixed height, uniform grid -->
+  <div class="flex flex-wrap justify-center gap-6">
+    {achievements.map((achievement) => (
+      <a href={achievement.href} class="card-image-wrapper">
+        <div class="card-image-container">
+          <img
+            src={achievement.image}
+            alt={achievement.title}
+            loading="lazy"
+          />
+        </div>
+        <div class="card-image-label">
+          {achievement.title}
+        </div>
+      </a>
+    ))}
+  </div>
+</MainLayout>

@@ -1,0 +1,36 @@
+/* Layout basics */
+body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height:1.6 }
+main.container { padding:16px; max-width: 960px; margin: 0 auto }
+
+/* Header / nav tweaks */
+header { padding: 16px 16px 0 16px }
+header nav a { margin-right: 12px; text-decoration: none }
+header h1 { margin: 0 }
+
+/* Buttons row on home */
+.btn-group-lg a { text-decoration: none }
+
+/* Photo box on home */
+.photo-box { max-width: 340px; margin: 0 auto }
+.photo-box img { display:block; width:100%; height:auto; border-radius: .5rem; box-shadow: 0 6px 24px rgba(0,0,0,.12) }
+
+/* Divider used in your Razor: <hr class="hr-danger" /> */
+.hr-danger { border: 0; height: 2px; background: var(--bs-danger, #dc3545); opacity: .6; margin: 2rem 0 }
+
+/* Prevent flex from squeezing images; keep aspect ratio */
+.image-container {
+  display: flex;           /* you already have d-flex, this is just for clarity */
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;  /* don't stretch to same height */
+}
+
+.image-container img {
+  flex: 0 0 auto;          /* DON'T shrink images */
+  width: auto;             /* let intrinsic width/height drive size */
+  height: auto;            /* preserve aspect ratio */
+  max-width: 320px;        /* tweak size to match About page */
+  max-height: 320px;       /* optional cap; remove if you want taller */
+  object-fit: contain;     /* or 'cover' if you want crop instead of letterbox */
+}
+

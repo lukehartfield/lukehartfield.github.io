@@ -1,0 +1,91 @@
+---
+const navItems = [
+  { label: '👤 About', href: '/about/' },
+  { label: '💼 Projects', href: '/projects/' },
+  { label: '📄 Resume', href: '/resume/' },
+  { label: '🏅 Achievements', href: '/achievements/' },
+  { label: '📷 Travel', href: '/travel/' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+  <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="text-lg font-semibold text-slate-900 hover:text-primary-600 transition-colors">
+        🏠 Home
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center gap-1">
+        {navItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class:list={[
+                'px-3 py-2 text-sm font-medium rounded-lg transition-colors',
+                currentPath.startsWith(item.href)
+                  ? 'text-primary-600 bg-primary-50'
+                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+              ]}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <ul class="flex flex-col gap-1">
+        {navItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class:list={[
+                'block px-3 py-2 text-sm font-medium rounded-lg transition-colors',
+                currentPath.startsWith(item.href)
+                  ? 'text-primary-600 bg-primary-50'
+                  : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+              ]}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.getElementById('menu-icon');
+
+  btn?.addEventListener('click', () => {
+    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', (!isExpanded).toString());
+    menu?.classList.toggle('hidden');
+
+    if (isExpanded) {
+      icon?.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+    } else {
+      icon?.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+    }
+  });
+</script>

@@ -1,0 +1,57 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Card from '../../components/Card.astro';
+---
+
+<MainLayout title="Level 10 Gymnast">
+  <a href="/achievements/" class="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-slate-700 mb-6">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Back to Achievements
+  </a>
+
+  <h1 class="text-3xl font-bold text-slate-900 mb-8">Level 10 Competitive Gymnast</h1>
+
+  <!-- Rule 2: Photo gallery - natural height -->
+  <div class="image-container mb-8">
+    <div class="photo-box-sm">
+      <img
+        src="/assets/achievementimage/younggym-min.JPG"
+        alt="Young gymnast"
+        loading="lazy"
+      />
+    </div>
+    <div class="photo-box-sm">
+      <img
+        src="/assets/achievementimage/gymteam-min.JPG"
+        alt="Gymnastics team"
+        loading="lazy"
+      />
+    </div>
+    <div class="photo-box-sm">
+      <img
+        src="/assets/achievementimage/gymteam2-min.JPG"
+        alt="Gymnastics team"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+  <section class="mb-8">
+    <h2 class="text-xl font-semibold text-slate-900 mb-4">My Gymnastics Journey</h2>
+    <Card class="p-6">
+      <p class="text-slate-600 leading-relaxed mb-4">
+        Reaching Level 10 took a decade of consistent, hard work—training 20 hours a week, switching gyms,
+        and pushing through soreness, pain, and setbacks. The rigorous training constantly pushed my boundaries
+        of physical and mental endurance. It tested my limits and forged real discipline and resilience.
+      </p>
+      <p class="text-slate-600 leading-relaxed">
+        I ultimately injured my back and had to retire in my final year before college. Even so, I left proud
+        of what I accomplished, highlighted by a <strong class="text-slate-900">4th-place finish in the region on parallel bars</strong>,
+        and confident I gave it everything. That chapter may be closed, but the habits it built—pushing myself,
+        staying disciplined, and embracing challenge—are very much alive.
+      </p>
+    </Card>
+  </section>
+</MainLayout>
