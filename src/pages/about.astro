@@ -8,33 +8,37 @@ import Card from '../components/Card.astro';
 
   <Card class="p-6 mb-8">
     <p class="text-slate-600 leading-relaxed">
-      I'm a recent graduate from The University of Texas at Austin with a BBA in Management Information Systems
-      and a current MS in Business Analytics student (Class of 2026). I'm driven by using technology to solve
-      complex, data-driven problems and building systems that bridge analytics, engineering, and product.
+      I am an MS in Business Analytics student at The University of Texas at Austin (Class of 2026) with a BBA in
+      Management Information Systems. I am currently working as a Product Engineer at Realocity, where I design
+      and build AI driven systems that turn business workflows into scalable, production ready products.
     </p>
   </Card>
 
-  <!-- Rule 2: Photo gallery - natural height -->
-  <div class="image-container mb-12">
-    <div class="photo-box-sm">
+  <div class="mb-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div class="flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 aspect-[4/5] p-2">
       <img
         src="/assets/images/jpmorgan-min.jpg"
         alt="JPMorgan Chase"
         loading="lazy"
+        class="max-h-full max-w-full object-contain"
       />
     </div>
-    <div class="photo-box-sm">
+
+    <div class="flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 aspect-[4/5] p-2">
       <img
         src="/assets/images/honors-min.jpg"
         alt="Honors recognition"
         loading="lazy"
+        class="max-h-full max-w-full object-contain"
       />
     </div>
-    <div class="photo-box-sm">
+
+    <div class="flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 aspect-[4/5] p-2">
       <img
         src="/assets/newimages/southwest2-min.jpg"
         alt="Southwest Airlines"
         loading="lazy"
+        class="max-h-full max-w-full object-contain"
       />
     </div>
   </div>
@@ -44,27 +48,36 @@ import Card from '../components/Card.astro';
       <h2 class="text-xl font-semibold text-slate-900 mb-4">Professional Experience</h2>
       <Card class="p-6">
         <p class="text-slate-600 leading-relaxed">
-          My work spans enterprise data governance at Southwest Airlines, where I improved GDPR compliance dashboards,
-          mapped 500+ data assets, and presented an agentic AI travel planner to senior leadership; commercial banking
-          operations at JPMorgan Chase, where I developed process improvement skills; and project management and data
-          solutions with nFLXn Consulting and teamUpHR. These roles have equipped me to lead projects, analyze data,
-          and build innovative solutions using AI, automation, and data visualization.
+          At Realocity, I am building an end to end AI pipeline product that is actively used by customer facing
+          teams to deliver services to more than 50 clients. My work spans product design, backend services,
+          model orchestration, and workflow automation, with a focus on reliability, cost efficiency, and real
+          user impact. I regularly work with stakeholders to translate business requirements into technical
+          systems and then help build and ship those solutions.
+        </p>
+        <p class="text-slate-600 leading-relaxed mt-4">
+          Previously, I worked in enterprise data governance at Southwest Airlines, where I improved access to
+          data artifacts, mapped more than 500 data assets into the enterprise Data Catalog, and supported privacy
+          and compliance reporting. I also worked in commercial banking operations at JPMorgan Chase, where I
+          developed a strong foundation in financial processes, risk analysis, and operational execution.
         </p>
       </Card>
     </section>
 
     <section>
-      <h2 class="text-xl font-semibold text-slate-900 mb-4">Technical & Leadership Skills</h2>
+      <h2 class="text-xl font-semibold text-slate-900 mb-4">Technical and Leadership Skills</h2>
       <Card class="p-6">
         <p class="text-slate-600 leading-relaxed mb-4">
-          Beyond corporate roles, I've applied my leadership as a private chess coach, guiding elementary students in
-          critical thinking and strategy. I also served as a Teaching Assistant under Dr. Linda Golden for Marketing
-          for Social Profit at UT, leading classroom discussions on social impact in business.
+          I have a strong technical toolkit across Python, full stack development, machine learning models,
+          data engineering, and analytics platforms. Through both industry work and graduate coursework, I have
+          built production grade ML systems, optimization models, and data pipelines that support real decision
+          making. My academic background and work experience also give me a solid grounding in finance, including
+          quantitative analysis, markets, and trading.
         </p>
         <p class="text-slate-600 leading-relaxed">
-          I've developed strong technical skills in Python, R, C#, SQL, and platforms like Power BI through internships
-          and academic projects. As a Master's student, I'm advancing into data science programming, optimization,
-          quantitative finance, unstructured data, and machine learning.
+          I am especially effective in hybrid roles where I can work directly with stakeholders, understand the
+          business process, and help design and implement the underlying system. In addition to technical work,
+          I have held leadership roles as a Teaching Assistant at UT and as a private chess coach, both of which
+          strengthened my ability to communicate complex ideas and lead teams through structured problem solving.
         </p>
       </Card>
     </section>
@@ -73,9 +86,10 @@ import Card from '../components/Card.astro';
       <h2 class="text-xl font-semibold text-slate-900 mb-4">Interests</h2>
       <Card class="p-6">
         <p class="text-slate-600 leading-relaxed">
-          Outside of work, I'm interested in blockchain, the outdoors, game theory, coding, and options trading.
-          I'm fluent in French and driven to explore the intersection of finance, technology, and data analytics.
-          I also love to travel—check out my <a href="/travel/" class="text-primary-600 hover:text-primary-700 font-medium">travel page</a> to see where I've been.
+          I am deeply interested in agentic AI systems and how intelligent workflows can augment real business
+          operations. I actively follow markets and investing, checking the market daily and exploring how data
+          and models can inform better decisions. Outside of tech, I am passionate about bass fishing, chess, bouldering, and the outdoors. I am always open to connecting with others building at the
+          intersection of AI, data, finance, and product.
         </p>
       </Card>
     </section>
